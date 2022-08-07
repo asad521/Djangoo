@@ -30,6 +30,7 @@ urlpatterns = [
     path('profile/', views.user_profile, name='profile'),
     path('logout/', views.logoutView, name='logout'),
     path('changepass/', views.changePassView, name='changepass'),
+    path('userdetails/<int:id>', views.user_details_View, name='userdetails'),
     # path('changepass1/', views.changePassViewW, name='changepassW'),
     path('', views.mymain),
 
